@@ -1,0 +1,35 @@
+<header class="bg-gray-100">
+  <!-- <div [ngSwitch]="value" class="text-black">
+    <p *ngSwitchCase="10">my valud is 10</p>
+    <p *ngSwitchCase="1">my valud is 1</p>
+    <p *ngSwitchCase="120">my valud is 120</p>
+    <p *ngSwitchDefault>my valud is default</p>
+  </div> -->
+  <!-- <p appHighlight betterDirective>style me</p> -->
+  <nav class="flex justify-between items-center p-4">
+    <div class="gap-9 flex justify-between items-center">
+      <span class="font-bold"><a href="#">Recipe Book</a></span>
+      <!-- <input type="text" #selector />
+      <button (click)="checkButton()">log</button> -->
+      <ul class="flex gap-2">
+        <li>
+          <a (click)="Recipes.emit('recipes')" href="#">Recipes</a>
+        </li>
+        <li>
+          <a (click)="shoppingList.emit('shoppingList')" href="#"
+            >Shopping list</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex gap-2 text-sm">
+      <span class="inline-block px-3 py-1 rounded-full bg-blue-300 text-white"
+        ><a href="/save-data">Save data</a></span
+      >
+      <span class="inline-block px-3 py-1 rounded-full bg-blue-300 text-white"
+        ><a href="/fetch-data">Fetch Data</a></span
+      >
+    </div>
+  </nav>
+</header>
